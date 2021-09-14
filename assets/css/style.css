@@ -1,0 +1,46 @@
+.header-logo__description, .header-logo__title {
+  text-shadow: 0 0 5px #000000, 0 0 10px #000000, 0 0 20px #000000;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-size: 16px;
+  font-family: "PT Sans", sans-serif;
+}
+
+a {
+  color: #165690;
+}
+a:hover a:focus {
+  color: #df8a13;
+  text-decoration: none;
+}
+
+.header-logo {
+  text-align: center;
+  margin: 100px auto;
+}
+.header-logo__title {
+  display: block;
+  font-size: 3.5rem;
+  margin-right: -0.33em;
+  letter-spacing: 0.33em;
+  color: #df8a13;
+  font-family: "PT Serif", serif;
+  text-shadow: 0 0 5px #000000, 0 0 10px #000000, 0 0 20px #000000;
+  margin-right: -0.33em;
+}
+.header-logo__description {
+  display: block;
+  font-size: 1.15rem;
+  letter-spacing: 0.2em;
+  color: #ffffff;
+  letter-spacing: 0.2em;
+}
+
+.header-logo__title{
+  text-decoration: none !important;
+}

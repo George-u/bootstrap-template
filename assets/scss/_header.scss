@@ -1,0 +1,26 @@
+.header-logo {
+  text-align: center;
+  margin: 100px auto;
+
+  &__title {
+    display: block;
+    font-size: 3.5rem;
+    margin-right: -0.33em;
+    letter-spacing: 0.33em;
+    color: $color-accent;
+    font-family: $font-header;
+    text-shadow: 0 0 5px $color-black, 0 0 10px $color-black,
+      0 0 20px $color-black;
+    margin-right: -0.33em;
+    @extend %text-shadow;
+  }
+
+  &__description {
+    display: block;
+    font-size: 1.15rem;
+    letter-spacing: 0.2em;
+    color: $color-white;
+    letter-spacing: 0.2em;
+    @extend %text-shadow;
+  }
+}
