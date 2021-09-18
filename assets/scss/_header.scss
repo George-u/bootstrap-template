@@ -1,6 +1,14 @@
+@use "presets" as *;
+@use "mixins" as *;
+
+
 .header-logo {
   text-align: center;
-  margin: 100px auto;
+  padding: 100px 0;
+  // margin: 100px auto;
+  background-image: url(../img/header-bg.jpg);
+  background-position: center;
+  background-size: cover;
 
   &__title {
     display: block;
