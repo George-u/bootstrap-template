@@ -92,39 +92,47 @@
           </div>
         </section>
 
-            <div class="collapse navbar-collapse" id="navbar-top">
-              <ul class="nav navbar-nav navbar-left">
-                <li>
-                  <a href="./index.html"
-                    >Головна<span class="sr-only">(current) </span></a
-                  >
-                </li>
-                <li class="active">
-                  <a href="./page.html"
-                    >Фільми<span class="sr-only">(current) </span></a
-                  >
-                </li>
-                <li>
-                  <a href="#">Серіали<span class="sr-only">(current) </span></a>
-                </li>
-                <li>
-                  <a href="#"
-                    >Контакти<span class="sr-only">(current) </span></a
-                  >
-                </li>
-              </ul>
-
-              <ul class="nav navbar-nav navbar-right">
-                <li>
-                  <a href="#">Новинки<span class="sr-only">(current) </span></a>
-                </li>
-                <li>
-                  <a href="#">Рейтинг<span class="sr-only">(current) </span></a>
-                </li>
-                <li>
-                  <a href="#">Роздачі<span class="sr-only">(current) </span></a>
-                </li>
-              </ul>
+        <section class="user-login panel panel-info hidden-lg hidden-md">
+          <div class="panel-heading">Пользователь</div>
+          <div class="panel-body">
+            <ul class="user-login__tabs nav nav-tabs" role="tablist">
+              <li role="presentation" class="active">
+                <a href="#user-login-main" aria-controls="user-login-main" role="tab" data-toggle="tab">
+                  <span class="glyphicon glyphicon-log-in" title="Вход"></span>
+                </a>
+              </li>
+              <li role="presentation">
+                <a href="#user-registration-main" aria-controls="user-registration-main" role="tab" data-toggle="tab">
+                  <span class="glyphicon glyphicon-user" title="Регистрация"></span>
+                </a>
+              </li>
+            </ul>
+            <div class="user-login__content tab-content">
+              <div role="tabpanel" class="tab-pane fade in active" id="user-login-main">
+                <form action="login">
+                  <div class="form-group">
+                    <input class="form-control input-lg" type="text" placeholder="Логин">
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control input-lg" type="password" placeholder="Пароль">
+                  </div>
+                  <button class="btn btn-lg btn-default btn-block" type="submit">Вход</button>
+                </form>
+              </div>
+              <div role="tabpanel" class="tab-pane fade" id="user-registration-main">
+                <form action="login">
+                  <div class="form-group">
+                    <input class="form-control input-lg" type="text" placeholder="Логин">
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control input-lg" type="password" placeholder="Пароль">
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control input-lg" type="email" placeholder="Email">
+                  </div>
+                  <button class="btn btn-lg btn-default btn-block" type="submit">Регистрация</button>
+                </form>
+              </div>
             </div>
           </div>
         </section>
@@ -132,7 +140,7 @@
         <section class="film-info">
           <h1>Иллюзия обмана 2</h1>
           <div class="embed-responsive embed-responsive-16by9">
-            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/Elfle5fkaZU"
+            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/k-xUVHrinJo"
               allowfullscreen></iframe>
           </div>
           <div class="film-info__well well text-center">
@@ -191,7 +199,6 @@
             <div class="form-group">
               <textarea class="form-control" placeholder="Напишите свой комментарий здесь..." rows="10"></textarea>
             </div>
-<<<<<<< HEAD
             <button type="submit" class="film-comment-form__button btn btn-lg btn-warning">Отправить</button>
           </form>
         </section>
@@ -287,167 +294,11 @@
                   </div>
                   <button class="btn btn-lg btn-default btn-block" type="submit">Регистрация</button>
                 </form>
-=======
-          </section>
-
-          <section class="film-comments">
-            <h2>Відгуки про фільм</h2>
-            <div class="panel panel-info">
-              <div class="panel-heading">
-                <span class="glyphicon glyphicon-user"></span>
-                <span>Юрій</span>
-              </div>
-              <div class="panel-body">
-                Фільм просто супер!!! Очікував тупого бездушевного
-                американського бойовика, но отримав цікавий фільм. Ну а жарти -
-                то супер)))).
               </div>
             </div>
-            <div class="panel panel-info">
-              <div class="panel-heading">
-                <span class="glyphicon glyphicon-user"></span>
-                <span>Еліна</span>
-              </div>
-              <div class="panel-body">
-                Смотрела в IMAX. Фильм отличный. Добрый, не напрягающий, типичный
-                американский фильм по комиксам. Спец. эффекты на уровне. Сюжетец
-                так себе. Но атмосфера создана приятная. Не плохо смонтирован.
-                Персонажи Халка и Старка представлены отлично: Халк по сценарию
-                спаситель человечества и гроза всех пришельцев, а Старк --
-                диалогами и Робертом Дауни-мл. Рекомендую посмотреть.
-              </div>
-            </div>
-          </section>
-
-          <section class="film-comment-form">
-            <h2>Залишити свій коментар</h2>
-            <form>
-              <div class="form-group">
-                <input
-                  type="text"
-                  class="form-control input-lg"
-                  placeholder="Ваше ім'я"
-                />
-              </div>
-              <div class="form-group">
-                <input
-                  type="email"
-                  class="form-control input-lg"
-                  placeholder="Введіть свій Email"
-                />
-              </div>
-              <div class="form-group">
-                <textarea
-                  class="form-control"
-                  placeholder="Напишіть свій коментар тут..."
-                  rows="10"
-                ></textarea>
-              </div>
-              <button
-                type="submit"
-                class="film-comment-form__button btn btn-lg btn-warning"
-              >
-                Відправити
-              </button>
-            </form>
-          </section>
-        </main>
-
-        <aside
-        class="left-sidebar col-lg-3 col-lg-pull-9 col-md-4 col-md-pull-8"
-      >
-        <div class="vertical-slider panel panel-info hidden-sm hidden-xs">
-          <div
-            id="vertical-carousel"
-            class="carousel slide"
-            data-ride="carousel"
-          >
-            <ol class="carousel-indicators">
-              <li
-                data-target="#vertical-carousel"
-                data-slide-to="0"
-                class="active"
-              ></li>
-              <li data-target="#vertical-carousel" data-slide-to="1"></li>
-              <li data-target="#vertical-carousel" data-slide-to="2"></li>
-            </ol>
-
-            <div class="carousel-inner" role="listbox">
-              <div class="item active">
-                <img
-                  class="vertical-slider__image"
-                  src="./assets/img/films/avengers.jpg"
-                  alt="img"
-                />
-              </div>
-              <div class="item">
-                <img
-                  class="vertical-slider__image"
-                  src="./assets/img/films/avengers.jpg"
-                  alt="img"
-                />
-              </div>
-              <div class="item">
-                <img
-                  class="vertical-slider__image"
-                  src="./assets/img/films/avengers.jpg"
-                  alt="img"
-                />
-              </div>
-            </div>
-
-            <a
-              class="left carousel-control"
-              href="#vertical-carousel"
-              role="button"
-              data-slide="prev"
-            >
-              <span
-                class="glyphicon glyphicon-chevron-left"
-                aria-hidden="true"
-              ></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a
-              class="right carousel-control"
-              href="#vertical-carousel"
-              role="button"
-              data-slide="next"
-            >
-              <span
-                class="glyphicon glyphicon-chevron-right"
-                aria-hidden="true"
-              ></span>
-              <span class="sr-only">Next</span>
-            </a>
           </div>
         </div>
 
-        <div class="site-search panel panel-info hidden-sm hidden-xs">
-          <div class="panel-heading">Пошук</div>
-          <div class="panel-body">
-            <form action="search">
-              <div class="input-group input-group-lg">
-                <input
-                  type="search"
-                  class="form-control"
-                  placeholder="Пошук за назвою фільму"
-                />
-                <span class="input-group-btn">
-                  <button class="btn btn-default" type="submit">
-                    <span
-                      class="glyphicon glyphicon-search"
-                      aria-hidden="true"
-                    ></span>
-                  </button>
-                </span>
->>>>>>> d4bd5b30fb0fbe175c2568e4b182f9d43f58e630
-              </div>
-            </form>
-          </div>
-        </div>
-
-<<<<<<< HEAD
         <div class="site-news panel panel-info">
           <div class="panel-heading">Новости сайта</div>
           <div class="panel-body">
@@ -472,109 +323,12 @@
             <div class="site-news-item">
               <div class="site-news-item__thumbnail thumbnail">
                 <img class="site-news-item__image" src="assets/img/75x75.png" alt="">
-=======
-        <div class="user-login panel panel-info hidden-sm hidden-xs">
-          <div class="panel-heading">Вхід в кабінет</div>
-          <div class="panel-body">
-            <ul class="user-login__tabs nav nav-tabs" role="tablist">
-              <li role="presentation" class="active">
-                <a
-                  href="#user-login-sidebar"
-                  aria-controls="user-login-sidebar"
-                  role="tab"
-                  data-toggle="tab"
-                >
-                  <span
-                    class="glyphicon glyphicon-log-in"
-                    title="Вход"
-                  ></span>
-                </a>
-              </li>
-              <li role="presentation">
-                <a
-                  href="#user-registration-sidebar"
-                  aria-controls="user-registration-sidebar"
-                  role="tab"
-                  data-toggle="tab"
-                >
-                  <span
-                    class="glyphicon glyphicon-user"
-                    title="Регистрация"
-                  ></span>
-                </a>
-              </li>
-            </ul>
-            <div class="user-login__content tab-content">
-              <div
-                role="tabpanel"
-                class="tab-pane fade in active"
-                id="user-login-sidebar"
-              >
-                <form action="login">
-                  <div class="form-group">
-                    <input
-                      class="form-control input-lg"
-                      type="text"
-                      placeholder="Логин"
-                    />
-                  </div>
-                  <div class="form-group">
-                    <input
-                      class="form-control input-lg"
-                      type="password"
-                      placeholder="Пароль"
-                    />
-                  </div>
-                  <button
-                    class="btn btn-lg btn-default btn-block"
-                    type="submit"
-                  >
-                    Вхід
-                  </button>
-                </form>
-              </div>
-              <div
-                role="tabpanel"
-                class="tab-pane fade"
-                id="user-registration-sidebar"
-              >
-                <form action="registration">
-                  <div class="form-group">
-                    <input
-                      class="form-control input-lg"
-                      type="text"
-                      placeholder="Логин"
-                    />
-                  </div>
-                  <div class="form-group">
-                    <input
-                      class="form-control input-lg"
-                      type="password"
-                      placeholder="Пароль"
-                    />
-                  </div>
-                  <div class="form-group">
-                    <input
-                      class="form-control input-lg"
-                      type="email"
-                      placeholder="Email"
-                    />
-                  </div>
-                  <button
-                    class="btn btn-lg btn-default btn-block"
-                    type="submit"
-                  >
-                    Реєстрація
-                  </button>
-                </form>
->>>>>>> d4bd5b30fb0fbe175c2568e4b182f9d43f58e630
               </div>
               <div class="site-news-item__title">
                 <a class="site-news-item__link" href="#">Скорость скачивания фильмов увеличена</a>
               </div>
               <div class="site-news-item__date">7 декабря 2016</div>
             </div>
-<<<<<<< HEAD
             <div class="site-news-item">
               <div class="site-news-item__thumbnail thumbnail">
                 <img class="site-news-item__image" src="assets/img/75x75.png" alt="">
@@ -626,136 +380,6 @@
         </div>
 
       </aside>
-=======
-          </div>
-        </div>
-
-        <div class="site-news panel panel-info">
-          <div class="panel-heading">Новини КіноЗалу</div>
-          <div class="panel-body">
-            <div class="site-news-item">
-              <div class="site-news-item__thumbnail thumbnail">
-                <img
-                  class="site-news-item__image"
-                  src="assets/img/75x75.png"
-                  alt=""
-                />
-              </div>
-              <div class="site-news-item__title">
-                <a class="site-news-item__link" href="#">Запуск КиноЗалу</a>
-              </div>
-              <div class="site-news-item__date">10 грудня 2021</div>
-            </div>
-            <div class="site-news-item">
-              <div class="site-news-item__thumbnail thumbnail">
-                <img
-                  class="site-news-item__image"
-                  src="assets/img/75x75.png"
-                  alt=""
-                />
-              </div>
-              <div class="site-news-item__title">
-                <a class="site-news-item__link" href="#"
-                  >Доданий новий функціонал</a
-                >
-              </div>
-              <div class="site-news-item__date">8 грудня 2021</div>
-            </div>
-            <div class="site-news-item">
-              <div class="site-news-item__thumbnail thumbnail">
-                <img
-                  class="site-news-item__image"
-                  src="assets/img/75x75.png"
-                  alt=""
-                />
-              </div>
-              <div class="site-news-item__title">
-                <a class="site-news-item__link" href="#"
-                  >Додані нові фільми в список</a
-                >
-              </div>
-              <div class="site-news-item__date">6 грудня 2021</div>
-            </div>
-            <div class="site-news-item">
-              <div class="site-news-item__thumbnail thumbnail">
-                <img
-                  class="site-news-item__image"
-                  src="assets/img/75x75.png"
-                  alt=""
-                />
-              </div>
-              <div class="site-news-item__title">
-                <a class="site-news-item__link" href="#"
-                  >Збільшена швидкість скачування фільмів</a
-                >
-              </div>
-              <div class="site-news-item__date">4 грудня 2021</div>
-            </div>
-            <div class="site-news-item">
-              <div class="site-news-item__thumbnail thumbnail">
-                <img
-                  class="site-news-item__image"
-                  src="assets/img/75x75.png"
-                  alt=""
-                />
-              </div>
-              <div class="site-news-item__title">
-                <a class="site-news-item__link" href="#"
-                  >Перша реєстрація на сайті</a
-                >
-              </div>
-              <div class="site-news-item__date">2 грудня 2021</div>
-            </div>
-          </div>
-        </div>
-
-        <div class="top-films panel panel-info">
-          <div class="panel-heading">Рейтинг фільмів</div>
-          <div class="top-films__body panel-body">
-            <div class="top-films__list list-group">
-              <a class="top-films__item list-group-item" href="#"
-                >Марсианин <span class="top-films__badge badge">7</span></a
-              >
-              <a class="top-films__item list-group-item" href="#"
-                >Иллюзия обмана 2
-                <span class="top-films__badge badge">5</span></a
-              >
-              <a class="top-films__item list-group-item" href="#"
-                >Из машины <span class="top-films__badge badge">4</span></a
-              >
-              <a class="top-films__item list-group-item" href="#"
-                >Люси <span class="top-films__badge badge">3</span></a
-              >
-              <a class="top-films__item list-group-item" href="#"
-                >Выхода нет <span class="top-films__badge badge">2</span></a
-              >
-              <a class="top-films__item list-group-item" href="#"
-                >Стражи галактики
-                <span class="top-films__badge badge">3</span></a
-              >
-              <a class="top-films__item list-group-item" href="#"
-                >Человек муравей
-                <span class="top-films__badge badge">4</span></a
-              >
-              <a class="top-films__item list-group-item" href="#"
-                >Месть от кутюр
-                <span class="top-films__badge badge">2</span></a
-              >
-              <a class="top-films__item list-group-item" href="#"
-                >Люди Икс <span class="top-films__badge badge">3</span></a
-              >
-              <a class="top-films__item list-group-item" href="#"
-                >Занесло <span class="top-films__badge badge">5</span></a
-              >
-              <a class="top-films__item list-group-item" href="#"
-                >Дочь Бога <span class="top-films__badge badge">7</span></a
-              >
-            </div>
-          </div>
-        </div>
-      </aside>
-      </div>
->>>>>>> d4bd5b30fb0fbe175c2568e4b182f9d43f58e630
     </div>
   </div>
 
@@ -767,7 +391,6 @@
 
             <div class="footer-top">
 
-<<<<<<< HEAD
               <div class="footer-first col-md-3 col-xs-6">
                 <h4>Lorem ipsum dolor sit.</h4>
                 <ul>
@@ -776,53 +399,6 @@
                   <li><a href="#">Eos neque, eius.</a></li>
                   <li><a href="#">Minus, omnis vel.</a></li>
                 </ul>
-=======
-    <footer class="footer">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="container">
-            <div class="row">
-              <div class="footer-top">
-                <div class="footer-first col-md-3 col-xs-6">
-                  <h4>Lorem ipsum dolor sit.</h4>
-                  <ul>
-                    <li><a href="#">Lorem ipsum dolor.</a></li>
-                    <li><a href="#">Delectus, labore, incidunt.</a></li>
-                    <li><a href="#">Eos neque, eius.</a></li>
-                    <li><a href="#">Minus, omnis vel.</a></li>
-                  </ul>
-                </div>
-
-                <div class="footer-second col-md-3 col-xs-6">
-                  <h4>Voluptatem, commodi, at.</h4>
-                  <ul>
-                    <li><a href="#">Lorem ipsum dolor.</a></li>
-                    <li><a href="#">Delectus, labore, incidunt.</a></li>
-                    <li><a href="#">Eos neque, eius.</a></li>
-                    <li><a href="#">Minus, omnis vel.</a></li>
-                  </ul>
-                </div>
-
-                <div class="footer-third col-md-3 col-xs-6">
-                  <h4>Sed, ducimus perspiciatis.</h4>
-                  <ul>
-                    <li><a href="#">Lorem ipsum dolor.</a></li>
-                    <li><a href="#">Delectus, labore, incidunt.</a></li>
-                    <li><a href="#">Eos neque, eius.</a></li>
-                    <li><a href="#">Minus, omnis vel.</a></li>
-                  </ul>
-                </div>
-
-                <div class="footer-fourth col-md-3 col-xs-6">
-                  <h4>Reiciendis, minima, a?</h4>
-                  <ul>
-                    <li><a href="#">Lorem ipsum dolor.</a></li>
-                    <li><a href="#">Delectus, labore, incidunt.</a></li>
-                    <li><a href="#">Eos neque, eius.</a></li>
-                    <li><a href="#">Minus, omnis vel.</a></li>
-                  </ul>
-                </div>
->>>>>>> d4bd5b30fb0fbe175c2568e4b182f9d43f58e630
               </div>
 
               <div class="footer-second col-md-3 col-xs-6">
@@ -862,14 +438,17 @@
 
           <div class="row">
             <div class="footer-bottom">
+
               <div class="footer-fifth col-xs-12">
-                <strong><a href="https://github.com/George-u">Навчальний шаблон Bootstrap. Студент - Юрій
-                    Мотиль</a></strong>
+                <strong><a href="https://github.com/George-u/bootstrap-template">Навчальний шаблон Bootstrap. Студент - Юрій
+                  Мотиль</a></strong>
               </div>
+
             </div>
           </div>
         </div>
       </div>
+
     </div>
   </footer>
 
